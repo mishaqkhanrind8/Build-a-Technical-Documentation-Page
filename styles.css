@@ -1,0 +1,106 @@
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: verdana, sans-serif;
+  word-spacing: 1px;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  margin: 0;
+}
+
+div.container {
+  display: grid;
+  grid-template-columns: 300px auto;
+  gap: 2vw;
+  margin-left: 15px;
+}
+
+h1 {
+  margin: 20px 0 15px;
+  font-weight: 500;
+  font-size: 35px;
+}
+h2 {
+  margin: 20px 0 12px;
+  font-weight: 500;
+}
+p {
+  font-size: 15px;
+color: #000000b3;
+line-height: 25px;
+}
+code {
+background-color: lightgray;
+padding: 3px;
+}
+ul li {
+  color: #000000b3;
+}
+header {
+  position: relative;
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px; 
+  height: 100vh;
+  background-color: lightgray;
+  z-index: 1000;
+  overflow-y: auto; 
+  padding-bottom: 20px;
+}
+pre {
+  display: block;
+  background-color: lightgray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: auto;
+}
+nav h2 {
+  margin-bottom: 1rem;
+  padding: 10px 16px;
+}
+a.nav-link {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 200;
+  padding: 10px 16px;
+  border-top: 1px solid black;
+}
+a.nav-link:hover {
+  background-color: #888;
+}
+.text-center {
+  text-align: center;
+  margin: 30px auto 10px;
+}
+p.text-center a {
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  div.container {
+    display: block;
+    margin-left: 0; 
+  }
+  .container, header {
+    overflow: visible;
+  }
+  #navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: auto;
+    overflow-y: visible;
+  }
+  a.nav-link {
+    display: block;
+    border: none;
+    margin: 5px auto;
+  }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Technical Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+ <header>
+  <nav id="navbar">
+   <header>
+     <h2>CSS Documentation</h2>
+    </header>
+    <a href="#introduction_to_css" class="nav-link">Introduction to CSS</a>
+    <a href="#css_syntax_and_rules" class="nav-link">CSS Syntax and Rules</a>
+    <a href="#selectors_and_specificity" class="nav-link">Selectors and Specificity</a>
+    <a href="#responsive_design" class="nav-link">Responsive Design</a>
+    <a href="#animation_and_transitions" class="nav-link">Animation and Transitions</a>
+    <a href="#media_queries" class="nav-link">Media Queries</a>
+    <a href="#variables" class="nav-link">Variables</a>
+  </nav>
+</header>
+
+<main id="main-doc">
+  <section class="main-section" id="introduction_to_css">
+   <header>
+    <h1>Introduction to CSS</h1> 
+      </header>
+    
+    <article>
+      <p>
+      CSS, or Cascading Style Sheets, is a style sheet language used to control the appearance and layout of web pages. While HTML provides the structure of a webpage — like headings, paragraphs, and lists — CSS determines how that structure looks: its colors, fonts, spacing, alignment, and even animations. In simple terms, HTML is the skeleton of a webpage, and CSS is its skin, clothes, and design.
+        </p>
+        <p>CSS plays a vital role in web development by enhancing the visual presentation and user experience. A plain HTML document without CSS looks basic and unstyled. By applying CSS, we can control how each element is displayed — including size, spacing, color, font, layout, and background. This makes websites more attractive, usable, and consistent across different pages.</p>
+        <p>CSS is used in combination with HTML. There are three main ways to apply CSS to an HTML document:</p>
+        <ul>
+          <li>Style colors, fonts, and layout</li>
+          <li>Create responsive designs</li>
+          <li>Separate content (HTML) from presentation (CSS)</li>
+          <li>Reuse styles across multiple pages</li>
+          <li>Positioning: static, relative, absolute, fixed</li>
+        </ul>
+</article>
+  </section>
+  <section class="main-section" id="css_syntax_and_rules">
+  <header>
+    <h2>CSS Syntax and Rules</h2>
+    </header>
+    <article>
+      <p>CSS syntax is how you write style rules to define how HTML elements should look. It's structured but simple once you get the hang of it.</p>
+      <p>
+        Everything inside { } is the declaration block:
+        </p>
+<pre class="code-style">
+  p {
+    color: red; /* Property: color, Value: red */
+    font-size: 18px; /* Property: font-size, Value: 18px */
+  }
+</pre>
+    </article>
+  </section>
+  <section class="main-section" id="selectors_and_specificity">
+    <header>
+    <h2>Selectors and Specificity</h2>
+    </header>
+    <article>
+      <p>Understanding selectors and specificity is essential to writing effective and maintainable CSS. They determine which styles apply when multiple rules target the same element.</p>
+    </article>
+  </section>
+  <section class="main-section" id="responsive_design">
+   <header>
+    <h2>Responsive Design</h2>
+   </header>
+    <article>
+      <p>Responsive design in CSS is a technique used to ensure that websites look and function well across a wide range of devices and screen sizes, from mobile phones to large desktop monitors. It involves using flexible layouts, scalable images, and media queries to adapt the layout and content dynamically based on the user’s device. Instead of setting fixed widths and pixel values, designers use relative units like percentages, em, rem, or viewport-based units (vw, vh) so that elements scale naturally with the screen.</p>
+      <p>One of the most powerful tools in responsive design is media queries, which apply different CSS rules depending on the screen's width, height, or resolution. Combined with layout models like Flexbox and CSS Grid, developers can rearrange content, change font sizes, or hide/show elements to improve usability and readability on different devices. Overall, responsive design enhances user experience, improves accessibility, and eliminates the need for separate mobile versions of websites.</p>
+    </article>
+  </section>
+  <section class="main-section" id="animation_and_transitions">
+   <header>
+      <h2>Animation and Transitions</h2>
+    </header>
+    <article>
+      <p>CSS animations and transitions are used to create smooth, visually appealing effects that enhance user interaction on a webpage. Transitions allow changes in CSS properties (like color, size, or position) to occur gradually over a specified duration, triggered by user actions such as hovering or clicking. Animations, on the other hand, let you define complex keyframe-based movements that can run automatically or in response to events. Together, they bring life to web elements, making interfaces more engaging, dynamic, and user-friendly without the need for JavaScript.</p>
+    </article>
+  </section>
+    <section class="main-section" id="media_queries">
+   <header>
+    <h2>Media Queries</h2>
+    </header>
+    <article>
+      <p>Media queries are a powerful feature in CSS that allow developers to apply different styles based on the characteristics of a user's device, such as screen width, height, orientation, or resolution. They enable responsive design by letting you define breakpoints — specific conditions where the layout or design should change to better suit the screen. For example, a media query can adjust font sizes, rearrange elements, or hide content when the screen is smaller than 768 pixels wide, making the website more mobile-friendly.</p>
+      <p>By using media queries, developers can create flexible layouts that adapt to smartphones, tablets, laptops, and desktops without needing multiple versions of the same site. This approach enhances user experience across various devices and improves accessibility. Media queries can be written using the <code>@media</code> rule, and combined with logical operators like and, <code>not</code>, or <code>only</code> to fine-tune when specific styles are applied. They are essential for modern web development, forming the backbone of responsive and adaptive design.</p>
+    </article>
+  </section>
+    <section class="main-section" id="variables">
+   <header>
+    <h2>Variables</h2>
+   </header>
+    <article>
+      <p>CSS Variables, also known as custom properties, allow developers to store values in reusable, named entities that make stylesheets more flexible and easier to maintain. Defined using a double hyphen syntax (e.g., <code>--main-color: #3498db;</code>), these variables can be declared in a selector like <code>:root</code> to apply globally or within specific elements for local use. CSS variables are especially useful for managing consistent design elements such as colors, spacing, and fonts across a website. They can also be dynamically updated with JavaScript, enabling more interactive and adaptable styling without repeatedly editing the same values throughout the CSS file.</p>
+    </article>
+  </section>
+  <p class="text-center">&copy; All right Reserved at <a target="_blank" href="https://www.pixelpioneers-learners.netlify.app/">Pixelpioneers<sup>&reg;</sup></a></p>
+</main>
+</div>
+</body>
+</html>
