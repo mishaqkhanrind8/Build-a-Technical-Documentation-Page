@@ -59,7 +59,9 @@ pre {
   padding-top: 10px;
   padding-bottom: 10px;
   overflow: auto;
-overflow-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 nav h2 {
   margin-bottom: 1rem;
