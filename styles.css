@@ -1,5 +1,5 @@
 
-* {
+*, ::after, ::before {
   box-sizing: border-box;
 }
 body {
@@ -87,6 +87,7 @@ p.text-center a {
   div.container {
     display: block;
     margin-left: 0; 
+padding: 1rem;
   }
   .container, header {
     overflow: visible;
