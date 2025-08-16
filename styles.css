@@ -1,6 +1,7 @@
 
 *, ::after, ::before {
   box-sizing: border-box;
+scrollbar-behavior: smooth;
 }
 body {
   font-family: verdana, sans-serif;
@@ -58,6 +59,7 @@ pre {
   padding-top: 10px;
   padding-bottom: 10px;
   overflow: auto;
+word-wrap: break-word;
 }
 nav h2 {
   margin-bottom: 1rem;
