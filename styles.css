@@ -86,8 +86,7 @@ p.text-center a {
 @media screen and (max-width: 768px) {
   div.container {
     display: block;
-    margin-left: 0; 
-padding: 1rem;
+    margin-left: 0;
   }
   .container, header {
     overflow: visible;
@@ -104,4 +103,7 @@ padding: 1rem;
     border: none;
     margin: 5px auto;
   }
+main {
+padding: 0 1rem;
+}
 }
